@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人簡歷</title>
+    <style>
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            background-color: #1c1c1c; 
+            color: #e0e0e0; 
+            padding-top: 50px;
+        }
+
+        
+        header {
+            background-color: #333; /* 深灰色 */
+            color: white;
+            padding: 30px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: center;  
+            align-items: center;     
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        header .container {
+            width: 100%;
+            text-align: center;   
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            flex-direction: column; 
+        }
+
+        
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 20px;  
+        }
+
+        .profile-picture img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #b0b0b0; 
+        }
+        article {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+
+        .left-section {
+            flex: 0 0 48%;
+            margin-bottom: 20px;
+        }
+
+
+        .right-section {
+            flex: 0 0 48%;
+            margin-bottom: 20px;
+        }
+
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            background-color: #2e2e2e; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+        }
+
+
+        .education-section,
+        .programming-skills-section,
+        .experience-section,
+        .contact-section,
+        .interests-section,
+        .future-section,
+        .university-section {
+            background-color: #2e2e2e; 
+            color: #d0d0d0; 
+        }
+
+        
+        .progress-bar {
+            background-color: #3a3a3a; 
+            border-radius: 5px;
+            height: 20px;
+            margin-top: 15px;
+        }
+
+        .progress {
+            height: 100%;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 20px;
+            color: white;
+            font-weight: bold;
+        }
+
+        
+        .Python { background-color: #555; width: 80%; }
+        .Java { background-color: #666; width: 70%; }
+        .HTML { background-color: #777; width: 45%; }
+        .CSS { background-color: #888; width: 5%; }
+
+        
+        footer {
+            background-color: #333; 
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        footer p {
+            font-size: 1.2rem;
+        }
+
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1.2rem;
+            }
+
+            header nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            
+            article {
+                width: 90%;
+            }
+
+            .left-section, .right-section, .interests-section {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="profile-picture">
+                <img src="picture/112.jpg">
+            </div>
+            <div>
+                <h1>吳柏均</h1>
+                <p>中原大學學生</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#education">教育經歷</a></li>
+                    <li><a href="#skills">程式能力</a></li>
+                    <li><a href="#future">大學及未來展望</a></li>
+                    <li><a href="#contact">聯絡方式</a></li>
+                    <li><a href="#interests">興趣</a></li>
+                    <li><a href="#university activities">大學活動</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <article>
+        <div class="left-section">
+            <section id="education" class="education-section">
+                <h2>經歷</h2>
+                <p>台北市國語實小 | 台北市南門國中 | 新北市板橋高中</p>
+                <p>大學: 中原大學 | 系所: 資訊管理學系</p>
+            </section>
+
+            <section id="programming-skills" class="programming-skills-section">
+                <h2>程式能力</h2>
+                <ul>
+                    <li>實修程式: Python, Java, HTML, CSS</li>
+                </ul>
+                <div class="progress-bar">
+                    <div class="progress Python">Python 60%</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress Java">Java 50%</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress HTML">HTML 45%</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress CSS">CSS 5%</div>
+                </div>
+            </section>
+        </div>
+
+        <div class="right-section">
+            <section id="future" class="future-section">
+                <h2>大學及未來展望</h2>               
+                <p>未來，我希望能在資訊管理領域和熱音社的活動中持續進步。</p>
+                <p>在資訊方面，我計畫深入學習程式設計及資料分析技能，並取得相關的專業證照，以在畢業後增加職場競爭力。希望能參與更多專案或實習，實際應用學到的知識，特別是在人工智慧和資料科學等快速發展的領域。</p>               
+                <p>在熱音社中，我想在音樂上不斷挑戰自我，參與更多社團活動，並提升舞台表現力。未來四年，我將努力平衡課業與音樂愛好，希望大學畢業時不僅能學有所成，還能在音樂表演方面達到新高度。</p>
+            </section>
+            
+
+            <section id="contact" class="contact-section">
+                <h2>聯絡方式</h2>
+                <p>電子郵件: jihyoo1022@gmail.com</p>
+            </section>
+        </div>
+    </article>
+
+    <footer>
+        <p>© 2024 吳柏均的個人網站</p>
+    </footer>
+</body>
+</html>
